@@ -14,56 +14,40 @@
 
 <body>
     <header>
-        <a href="https://github.com/inoaaand" target="_blank" aria-label="Instagram"
-            style="position: absolute; top: 10px; right: 20px; color:white">
-            <i data-feather="github"></i>
-        </a>
-        <a href="https://instagram.com/ifnand4" target="_blank" aria-label="Instagram"
-            style="position: absolute; top: 10px; right: 50px; color:white">
-            <i data-feather="instagram"></i>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#impacto-cultural">Impacto Cultural</a></li>
-                <li><a href="#principais-artistas">Principais Artistas</a></li>
-                <li><a href="#hip-hop-moda">Hip-hop e a Moda</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Hip-Hop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#impacto-cultural">Impacto Cultural</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#principais-artistas">Principais Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hip-hop-moda">Hip-hop e a Moda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section id="home">
+    <section id="home" class="p-4 text-center">
         <h2><i data-feather="home"></i></h2>
         <h1>Bem-vindo à nossa jornada pelo Hip-Hop!</h1>
-        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Título do popover"
-            data-content="Aqui vai algum tipo de conteúdo. Muito da hora, né?!">Clique para ver o popover</button>
-        <p>
+
+        <a href="#impacto-cultural" class="btn btn-custom btn-lg mt-3">Começar agora</a>
+
+        <p class="mt-4">
             O hip-hop não é apenas uma cultura ou uma música. Ele é um reflexo de
             uma sociedade em transformação, um movimento que nasceu das ruas e
             conquistou o mundo. Mais do que um gênero musical, o hip-hop é uma
@@ -85,8 +69,7 @@
         </p>
     </section>
 
-
-    <section id="impacto-cultural">
+    <section id="impacto-cultural" class="p-4">
         <h2><i data-feather="trending-up"></i></h2>
         <h2>Impacto Cultural do Hip-Hop: Uma Revolução Global</h2>
 
@@ -121,14 +104,18 @@
             colaborações e coleções exclusivas para esse público fiel e apaixonado.
         </p>
 
-        <div class="card" style="width: 18rem;">
-            <img class="img-artista" src="img/kendrickL.png" alt="Kendrick Top 100">
-            <div class="card-body">
-                <p class="card-text">"falar brevemente ibre top 100 kendrickk com album GNX"</p>
+        <div class="d-flex justify-content-center my-4">
+            <div class="card" style="width: 18rem;">
+                <img src="img/kendrickL.png" alt="Kendrick Top 100" class="img-fluid rounded">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Dominando a Billboard</h5>
+                    <p class="card-text">O álbum "GNX" do Kendrick Lamar quase dominou todo o Top 10 da Billboard,
+                        mostrando seu impacto gigantesco.</p>
+                </div>
             </div>
         </div>
-
     </section>
+
 
     <section id="principais-artistas">
         <h2><i data-feather="music"></i></h2>
@@ -193,61 +180,99 @@
             sociais e culturais.
         </p>
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div id="carouselArtistas" class="carousel slide carousel-dark" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselArtistas" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Doja Cat"></button>
+                <button type="button" data-bs-target="#carouselArtistas" data-bs-slide-to="1"
+                    aria-label="Tyler The Creator"></button>
+                <button type="button" data-bs-target="#carouselArtistas" data-bs-slide-to="2"
+                    aria-label="Tupac Shakur"></button>
+                <button type="button" data-bs-target="#carouselArtistas" data-bs-slide-to="3"
+                    aria-label="Doechii"></button>
+                <button type="button" data-bs-target="#carouselArtistas" data-bs-slide-to="4"
+                    aria-label="Kendrick Lamar"></button>
+                <button type="button" data-bs-target="#carouselArtistas" data-bs-slide-to="5"
+                    aria-label="The Notorious B.I.G."></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/doja.png" class="d-block w-50" alt="...">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/doja.png" class="d-block mx-auto img-fluid w-75 w-md-50 rounded"
+                        alt="Foto da artista Doja Cat">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>DOJA CAT</h5>
-                        <p>@dojacat.</p>
+                        <h5>Doja Cat</h5>
+                        <p>@dojacat</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/tyler.jpeg" class="d-block w-50" alt="...">
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/tyler.jpeg" class="d-block mx-auto img-fluid w-75 w-md-50 rounded"
+                        alt="Foto do artista Tyler The Creator">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Tyler the Creator</h5>
-                        <p>@feliciathegoat.</p>
+                        <h5>Tyler, The Creator</h5>
+                        <p>@feliciathegoat</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/tupac.jpeg" class="d-block w-50" alt="...">
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/tupac.jpeg" class="d-block mx-auto img-fluid w-75 w-md-50 rounded"
+                        alt="Foto do artista Tupac Shakur">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>tupac *</h5>
+                        <h5>Tupac Shakur</h5>
                         <p>@tupac</p>
                     </div>
                 </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/doechii.png" class="d-block mx-auto img-fluid w-75 w-md-50 rounded"
+                        alt="Foto da artista Doechii">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Doechii</h5>
+                        <p>@doechii</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/kendrickL.png" class="d-block mx-auto img-fluid w-75 w-md-50 rounded"
+                        alt="Foto do artista Kendrick Lamar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Kendrick Lamar</h5>
+                        <p>@kendricklamar</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/biggie.jpeg" class="d-block mx-auto img-fluid w-75 w-md-50 rounded"
+                        alt="Foto do artista The Notorious B.I.G.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Notorious B.I.G.</h5>
+                        <p>@biggie</p>
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselArtistas" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselArtistas" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Próximo</span>
             </button>
         </div>
-
     </section>
 
     <section id="hip-hop-moda">
         <h2><i data-feather="star"></i></h2>
         <h2>Hip-hop e a Moda: O Estilo que Quebrou Barreiras</h2>
+
         <p>
             A moda hip-hop é um reflexo da sua atitude: ousada, autêntica e sem
             limitações. Quando falamos de estilo hip-hop, não estamos apenas falando
             de roupas, mas de uma filosofia de vida que combina individualidade,
             liberdade e atitude.
+
+            <button type="button" class="btn btn-light btn-sm btn-info ms-2" data-bs-toggle="popover"
+                title="Moda Hip-Hop"
+                data-bs-content="O estilo hip-hop mistura influências de diversas culturas urbanas, com roupas amplas, cores vibrantes e acessórios expressivos, representando resistência e autenticidade.">
+                Saiba mais
+            </button>
         </p>
+
         <p>
             Marcas como Adidas, Nike, Supreme e Off-White se uniram ao movimento
             hip-hop, criando colaborações que não só celebram o estilo urbano, mas
@@ -297,10 +322,21 @@
             não se limita a um gênero musical, mas se expande por todas as formas de
             expressão humana.
         </p>
-        <img class="img-artista" src="img/travis.png" alt="Travis Scott">
-        <img class="img-artista" src="img/yeezy.jpg" alt="YEEZY">
+
+        <img class="img-artista" src="img/travis.png" alt="Travis Scott" />
+        <img class="img-artista" src="img/yeezy.jpg" alt="YEEZY" />
+
     </section>
+
     <footer>
+        <div class="position-absolute top-0 end-0 p-3 d-flex gap-3">
+            <a href="https://github.com/inoaaand" target="_blank" aria-label="GitHub" class="text-white">
+                <i data-feather="github" class="feather-icon"></i>
+            </a>
+            <a href="https://instagram.com/ifnand4" target="_blank" aria-label="Instagram" class="text-white">
+                <i data-feather="instagram" class="feather-icon"></i>
+            </a>
+        </div>
         <p>&copy; 2025. Todos os direitos reservados.</p>
     </footer>
     <script>
@@ -309,6 +345,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+        <script>
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        </script>
 </body>
 
 </html>
