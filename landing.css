@@ -120,3 +120,7 @@ figcaption {
   color: white;
   border-color: #a678c1;
 }
+.carousel-caption h5,
+.carousel-caption p {
+  color: rgb(255, 255, 255) !important;
+}
